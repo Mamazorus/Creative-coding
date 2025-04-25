@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'IntegralCF-Bold';
+    src: url('./fonts/IntegralCF-Bold.ttf') format('truetype'); /* Assurez-vous que le chemin est correct */
+}
+
+@font-face {
+    font-family: 'inter-light';
+    src: url('./fonts/Inter_18pt-Light.ttf') format('truetype'); /* Assurez-vous que le chemin est correct */
+}
+
+@font-face {
+    font-family: 'inter-extralight';
+    src: url('./fonts/Inter_18pt-ExtraLight.ttf') format('truetype'); /* Assurez-vous que le chemin est correct */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background: url('img/background_blurv.jpg');
+    background-repeat: no-repeat;
+  background-size: cover; /* pour que l’image remplisse tout sans se répéter */
+  background-position: center;
+  height: 100vh;
+    background-color: #070707;
+  }
+  
