@@ -120,6 +120,7 @@ font-size: 8vw;
 border-right: 2px solid; /* Curseur de la machine à écrire */
 white-space: nowrap;
 overflow: hidden;
+color: white;
 }
 
 /* Animation de clignotement du curseur */
