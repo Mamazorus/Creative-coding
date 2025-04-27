@@ -85,8 +85,13 @@ h3 {
   font-family: 'inter-light', sans-serif;
   margin-top: 10px;
     font-size: 16px;
-    color: #a3a1a1;
+    color: #ffffff;
     margin-right: 10vw;
+    text-decoration: none;
+    border: 1px solid #5c5c5c;
+    padding: 10px;
+    text-underline-offset: 2px; 
+
 }
 
 @media (max-width: 1200px){
@@ -190,6 +195,7 @@ h3 {
     word-spacing: 1px;      
   letter-spacing: 1.2px; 
   }
+  
 
   @media (max-width: 850px) {
     /* Suppression du sticky pour la version mobile */
