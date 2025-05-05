@@ -158,13 +158,43 @@ h3 {
   }
 
 
+  .tag-bottom2 {
+    display: flex;           /* Ajout de flex pour gérer la disposition */
+    flex-wrap: wrap;         /* Permet de faire passer les éléments à la ligne */
+    margin-top: 20px;        /* Espace au-dessus de .tag */
+    gap: 0px;               /* Espacement entre les éléments sur l'axe horizontal et vertical */
+  }
+  
+  .tag-bottom2 a {
+    border: 1px solid #5c5c5c;
+    padding: 10px 15px;
+    border-radius: 200px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #070707;
+    background-color: white;
 
+    font-family: 'inter-Light', sans-serif;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;   /* Pour que chaque lien se comporte comme un bloc, avec espacement */
+  }
+  
+  .tag-bottom2 a:hover {
+    background-color: #070707;
+    color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 1px 2px 10px #070707;
+  }
+
+  .tag-bottom2 p {
+    border: none;
+  }
 
 
   .tag-bottom {
     display: flex;           /* Ajout de flex pour gérer la disposition */
     flex-wrap: wrap;         /* Permet de faire passer les éléments à la ligne */
-    margin-top: 20px;        /* Espace au-dessus de .tag */
+    margin-top: 0px;        /* Espace au-dessus de .tag */
     gap: 0px;               /* Espacement entre les éléments sur l'axe horizontal et vertical */
   }
   
@@ -267,5 +297,21 @@ h3 {
   .bottom-sticky {
     margin-top: 40px; /* Cela va pousser la partie bottom-sticky en bas de son parent */  
 }
+.tag-bottom {
+  display: flex;           /* Ajout de flex pour gérer la disposition */
+  flex-wrap: wrap;         /* Permet de faire passer les éléments à la ligne */
+  margin-top: 0px;        /* Espace au-dessus de .tag */
+  gap: 0px;               /* Espacement entre les éléments sur l'axe horizontal et vertical */
+}
+
+.tag-bottom2 {
+  display: flex;           /* Ajout de flex pour gérer la disposition */
+  flex-wrap: wrap;         /* Permet de faire passer les éléments à la ligne */
+  margin-top: 20px;
+  margin-left: 40px;        /* Espace au-dessus de .tag */
+  gap: 0px;               /* Espacement entre les éléments sur l'axe horizontal et vertical */
+}
+
+
 }
   
