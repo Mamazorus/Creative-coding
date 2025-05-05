@@ -126,10 +126,20 @@ body {
   background: linear-gradient(to bottom, #f1f1f1, #353535);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
-  font-size: 8vw;
+  font-size: 10vw;
   border-right: 2px solid; /* Curseur de la machine à écrire */
   white-space: nowrap;
   overflow: hidden;
+}
+
+@media (max-width: 850px){
+  .typing-effect {
+    font-size: 11vw;
+}
+
+.job p {
+  font-size: 4vw;
+}
 }
 
 /* Animation de clignotement du curseur */

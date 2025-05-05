@@ -199,6 +199,17 @@ animation-delay: 1.9s;
 
 
 
+@media (max-width: 850px){
+  .typing-effect {
+    font-size: 11vw;
+}
+
+.job p {
+  font-size: 4vw;
+}
+}
+
+
 
 
 @keyframes slideInFromLeft {
@@ -286,7 +297,7 @@ from {
   opacity: 1;
 }
 to {
-  top: -100%;
+  top: -100vh;
   opacity: 1;
 }
 }
