@@ -6,65 +6,74 @@ const lenis = new Lenis({
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  const menuToggle = document.getElementById('mobile-menu');
-  const mobileMenuLinks = document.getElementById('mobile-menu-links');
 
-  menuToggle.addEventListener('click', function() {
-    menuToggle.classList.toggle('active');
-    mobileMenuLinks.classList.toggle('active');
-
-    if (mobileMenuLinks.style.display === 'flex') {
-      mobileMenuLinks.style.display = 'none';
-    } else {
-      mobileMenuLinks.style.display = 'flex';
-    }
-  });
-});
+document.addEventListener("DOMContentLoaded", function() {
+  const images = [
+      "img/knit1.jpg",
+      "img/knit2.jpg", 
+      "img/knit3.jpg",
+      "img/knit4.jpg",  
+      "img/knit5.jpg",  
+      "img/knit6.jpg"
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  const menuToggle = document.getElementById('mobile-menu');
-  const mobileMenuLinks = document.getElementById('mobile-menu-links');
-  const star = document.getElementById('star');
+  ];
 
-  menuToggle.addEventListener('click', function() {
-    menuToggle.classList.toggle('active');
-    mobileMenuLinks.classList.toggle('active');
-  });
+  let currentIndex = 0;
+  const imgElement = document.getElementById("switchImage1");
 
-  star.addEventListener('click', function() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-  const menuToggle = document.getElementById('mobile-menu');
-  const mobileMenuLinks = document.getElementById('mobile-menu-links');
-  const body = document.body;
-
-  menuToggle.addEventListener('click', function() {
-    menuToggle.classList.toggle('active');
-    mobileMenuLinks.classList.toggle('active');
-    body.classList.toggle('no-scroll'); // Ajoute ou retire la classe pour désactiver le défilement
-
-    // Empêche le défilement lorsque le menu est actif
-    if (body.classList.contains('no-scroll')) {
-      window.addEventListener('scroll', preventScroll);
-    } else {
-      window.removeEventListener('scroll', preventScroll);
-    }
-  });
-
-  function preventScroll(event) {
-    event.preventDefault();
-    window.scrollTo(0, 0); // Réinitialise le défilement à la position initiale
+  function switchImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      imgElement.src = images[currentIndex];
   }
+
+  // Change l'image toutes les 3 secondes (3000 millisecondes)
+  setInterval(switchImage, 1000);
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  const images = [
+      "img/pant1.jpg",
+      "img/pant2.jpg", 
+      "img/pant3.jpg",
+      "img/pant4.jpg",  
+      "img/pant5.jpg"
+
+  ];
+
+  let currentIndex = 0;
+  const imgElement = document.getElementById("switchImage2");
+
+  function switchImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      imgElement.src = images[currentIndex];
+  }
+
+  // Change l'image toutes les 3 secondes (3000 millisecondes)
+  setInterval(switchImage, 1000);
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const images = [
+      "img/studio1.jpg",
+      "img/studio2.jpg", 
+      "img/studio3.jpg",
+      "img/studio4.jpg",  
+      "img/studio5.jpg"
+
+  ];
+
+  let currentIndex = 0;
+  const imgElement = document.getElementById("switchImage3");
+
+  function switchImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      imgElement.src = images[currentIndex];
+  }
+
+  // Change l'image toutes les 3 secondes (3000 millisecondes)
+  setInterval(switchImage, 1000);
+});
 
 
 
@@ -164,7 +173,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // Force le défilement vers le haut de la page
   window.scrollTo(0, 0);
 });
-
 
 
 

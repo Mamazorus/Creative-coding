@@ -77,6 +77,14 @@
     -webkit-text-fill-color: transparent;
   }
   
+  .git{
+    margin-right: 10px;
+  }
+
+  .git:hover{
+    color: rgb(157, 157, 157);
+  }
+
   .license{
     width: 60%;
   }
@@ -149,6 +157,7 @@
   color: #070707;
   box-shadow: 1px 2px 10px rgba(255, 255, 255, 0.2);
 }
+
 
 
 
