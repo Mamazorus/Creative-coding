@@ -30,8 +30,6 @@
 
 body {
     margin: 0;
-    overflow: hidden;
-    overflow-y: auto;
   }
   
   main {
@@ -75,7 +73,7 @@ body {
   transform: translateY(-50%);
   width: 10px;
   height: 10px;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 50%;
   animation: blink 2s infinite; /* Animation de clignotement */
   scale: 1.2;
@@ -89,7 +87,7 @@ body {
   left: 50%;
   width: 20px;
   height: 20px;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 50%;
   opacity: 0.5;
   transform: translate(-50%, -50%) scale(0.5);
@@ -123,7 +121,7 @@ body {
 
 .typing-effect {
   font-family: 'Inter-extrabold', sans-serif;
-  background: linear-gradient(to bottom, #f1f1f1, #353535);
+  background: linear-gradient(20deg, #181721, #ffffff); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   font-size: 10vw;
